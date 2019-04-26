@@ -1,21 +1,28 @@
-import React from 'react';
-import faker from 'faker';
+import React from "react";
 
-export default function Comment() {
+export default function Comment({
+  avatar,
+  firstName,
+  date,
+  time,
+  commentText
+}) {
   return (
     <div className="comment">
       <a href="/" className="avatar">
-        <img src={faker.image.avatar()} alt="avatar" />
+        <img src={avatar} alt="avatar" />
       </a>
       <div className="content">
-        <a href="/" className="author">{faker.name.firstName()}</a>
+        <a href="/" className="author">
+          {firstName}
+        </a>
         <div className="metadata">
-          <span className="date">{faker.date.weekday()} at {faker.date.recent().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}</span>
+          <span className="date">
+            {date} at {time}
+          </span>
         </div>
-        <div className="text">
-          {faker.hacker.phrase()}
-        </div>
+        <div className="text">{commentText}</div>
       </div>
     </div>
-  )
+  );
 }
