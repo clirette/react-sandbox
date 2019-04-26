@@ -1,5 +1,8 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# React Sandbox
+I use this react sandbox to test out random things in react without having to run `create-react-app` again. Each branch off of master acts as a different sandbox to test things.
+
 ## Available Scripts
 
 In the project directory, you can run:
