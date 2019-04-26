@@ -27,16 +27,19 @@ const App = () => {
   generateComment(MAX_COMMENTS);
 
   return (
-    <div className="ui container comments">
-      <Comment
-        avatar="https://en.gravatar.com/userimage/153747069/41e965a07cb3510c435949f510f29907.jpg"
-        firstName="Chase"
-        date="Monday"
-        time="3:00 PM"
-        commentText="React is cool!"
-      />
+    <div className="container">
+      <div className="ui comments">
+        <h3 className="ui dividing header">Comments</h3>
+        <Comment
+          avatar="https://en.gravatar.com/userimage/153747069/41e965a07cb3510c435949f510f29907.jpg"
+          firstName="Chase"
+          date="Monday"
+          time="3:00 PM"
+          commentText="React is cool!"
+        />
 
-      {comments}
+        {comments}
+      </div>
     </div>
   );
 };
